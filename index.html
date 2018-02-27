@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>
-Hello World
-</h1>
-<p>
-I'm hosted with GitHub pages
-</p>
-</body>
+<head>
+ <title>HTML Images and Objects</title>
+ <meta name="Author" content="Ivan Mykhayliv"/>
+ <meta name="Description" content="Sample for HTML metadata testing"/>
+ <meta name="keywords" content="Sample, HTML"/>
+ <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+ 
+ <!--Matrix-style coloring, with pure Green for text and pure Black for the BG.-->
+ <style type="text/css">
+    body {background-color:black}
+	body {color:rgb(0,255,0)}
+	acronym {color:red}
+	abbr {color:blue}
+	.highlight {text-decoration:underline}
+	
+	OL.withAlpha {list-style-type:lower-alpha}
+	OL.withRoman {list-style-type:lower-roman}
+	OL.withUpperAlpha {list-style-type:upper-alpha}
+	OL.withUpperRoman {list-style-type:upper-roman}
+	
+	UL.square {list-style-type:square}
+	UL.circle {list-style-type:circle}
+	UL.disc {list-style-type:disc}
+   </style>
+ 
+ </head>
+ <body>
+ <h1>HTML Images and Objects</h1>
+ <!--Object tags can be nested-->
+ <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="50%" height ="150px">
+ <param name="source" value="./apps/SilverlightObjectDemo.xap" />
+ <param name="initParams" value="TextMessage=Do not use marquees in HTML" />
+ <span>Silverlight seems to be unavailable.</span>
+ 
+ </object>
+ 
+ <h2>Overview</h2>
+ 
+ <!--Within this div, an entire, modular element is made, with proper spacing to boot. Now, it can be subject to things such as collapsing via scripts.-->
+ <div id="OverviewContainer">
+ 
+	<p>
+		<span>	
+		<!--Links to the Terminology section of the page-->
+		See the <a href="#Terminology">Terminology</a> section for the used Term Definitions.
+		<br />
+		<br />
+		</span>
+				
+		<span id="HTMLTag" class="highlight">			
+			<acronym title="Hypertext Markup Language">HTML</acronym> drives the web.</span>
+			Whether it's <abbr title="Internet Explorer">IE</abbr>, Chrome, Firefox, <acronym title="Shit">Safari</acronym>, Opera (The best browser), or
+			whatever other browser you my use., a lot of us use the web on a daily basis. Here, &nbsp;you will learn the
+			fundamentals of learning how to make webpages via HTML.
+	</p>
+	
+	<p>
+		Not covered is information regarding <acronym title="Cascading Style Sheets">CSS</acronym>, JavaScript, or
+		<acronym title="HyperText Transfer Protocool">HTTP</acronym>. Those topics can be covered on YouTube or through Amazon book purchases. 
+		<sup>
+		<a href="http://www.youtube.com">1</a>,
+		<a href="http://www.amazon.com">2</a> 
+		</sup>
+	</p>
+ 
+ <h3>Objectives</h3>
+ 
+ <!--Unordered list-->
+ <!--Deprecated version: <ul type ="square">-->
+ <ul class="square">
+ <!--In (Un)Ordered Lists, Items are called out with an LI List Item tag; renders out as bulleted, block-level items,
+ regardless of whitespace. Also, List-Nesting is possible-->
+ <li>HTML Fundamental Concepts explanation</li>
+ 
+ <li>
+ Have fun
+	<ul type ="circle">
+		<li>Creating Documents</li>
+		<li>Creating Information</li>
+	</ul>
+ </li>
+ 
+ <li>Mark it up</li>
+ </ul>
+ <h3>Outline</h3>
+ <!--Ordered Lists-->
+ <ol class ="withUpperRoman">
+ <li>Introduction</li>
+ 
+ <!--The . signifies to start in the current directory. Also, the #deeplink signifies the name of the anchor that Text Elements should jump to upon clicking
+ and going to the next page; basically jumps to a specific section on a different page through the link. DL exercise documents for a better example rather
+ than use the self-made one.-->
+<li><a href=".\content\text.html#deeplink">Text Elements</a></li>
+
+  <li>
+<a href=".\content\lists.html">Lists</a>
+ <!--Start and Value technically deprecated, but only in Strict HTML definitions. They can be used for the Loose and Transitional HTML definitions-->
+	<ol start ="5" class ="withRoman">
+		<li value ="6">Unordered Lists</li>
+		<li>Ordered Lists</li>
+		<li>Definition Lists</li>
+	</ol>
+ </li>
+ 
+ <li>Links</li>
+ </ol>
+ 
+ </div>
+ 
+ <h2>History</h2>
+	<cite>Tim Berners Lee</cite> is often cited as creating the Internet and HTML.
+	<blockquote cite="https://www.naic.edu/~gibson/poems/gilbert1.html">
+I am the very model of a modern Major-General,
+I've information vegetable, animal, and mineral,
+I know the kings of England, and I quote the fights historical,
+From Marathon to Waterloo, in order categorical;
+I'm very well acquainted too with matters mathematical,
+I understand equations, both the simple and quadratical,
+About binomial theorem I'm teeming with a lot o' news---
+With many cheerful facts about the square of the hypotenuse.
+
+I'm very good at integral and differential calculus,
+I know the scientific names of beings animalculous;
+In short, in matters vegetable, animal, and mineral,
+I am the very model of a modern Major-General.
+
+I know our mythic history, King Arthur's and Sir Caradoc's,
+I answer hard acrostics, I've a pretty taste for paradox,
+I quote in elegiacs all the crimes of Heliogabalus,
+In conics I can floor peculiarities parablous.
+I can tell undoubted Raphaels from Gerard Dows and Zoffanies,
+I know the croaking chorus from the Frogs of Aristophanes,
+Then I can hum a fugue of which I've heard the music's din afore,
+And whistle all the airs from that infernal nonsense Pinafore.
+
+Then I can write a washing bill in Balylonic cuneiform,
+And tell you every detail of Caractacus's uniform;
+In short, in matters vegetable, animal, and mineral,
+I am the very model of a modern Major-General.
+
+In fact, when I know what is meant by "mamelon" and "ravelin",
+When I can tell at sight a chassepot rifle from a javelin,
+When such affairs as sorties and surprises I'm more wary at,
+And when I know precisely what is meant by "commissariat",
+When I have learnt what progress has been made in modern gunnery,
+When I know more of tactics than a novice in a nunnery:
+In short, when I've a smattering of elemental strategy,
+You'll say a better Major-General has never sat a gee---
+
+For my military knowledge, though I'm plucky and adventury,
+Has only been brought down to the beginning of the century;
+But still in matters vegetable, animal, and mineral,
+I am the very model of a modern Major-General.
+	</blockquote>
+ 
+ <h2>Examples</h2>
+ 
+ <div id="ExamplesContainer">
+ 
+ <h3>Administrator</h3>
+ John Smith <br />
+ 
+ <!--
+ Image path is relative to the HTML file's location, and adding images only needs one code line rather than an entire container like div, h1, etc.
+ Additional parameters can be added to resize the image if needed, e.g. width="100", height="100". Their ordering is irrelevant
+ -->
+ <img src=".\images\bigboss_small.png" alt="An image of Big Boss" width="200" height="200"/>
+ 
+ 
+ <!--&nbsp; here prevents space breaks, particularly the kind that stem from a resized browser window.-->
+ <p>HTML drives the web. Whether it's IE, Chrome, Firefox, Safari, Opera (The best browser), and so on. A lot of us use the web on a daily basis.
+ Here, &nbsp;you will learn the fundamentals of learning how to make webpages via HTML.</p>
+ 
+ <!--Whitespace completely respected here due to pre. Also, a different font is used: The same one used for Notepad.-->
+	<hr />
+	<pre>
+	Wake up, Neo
+	The Matrix has you.
+	
+	FOLLOW THE WHITE RABBIT
+	</pre>
+	
+	<h3>Breaks</h3>
+	
+	<!--A literal horizontal line is made on the page at this point in the document. On a White BG, it is Black. On Black, it is White. Find other color
+	options.-->
+	<hr />
+ <!--Spaces can be rendered via Span, but not necessarily new lines. This is the case with Firefox, at least. The singular function BR, singular b/c only one
+ is needed, it doesn't need to be encased, creates a new line.-->
+ <span>First Span</span> <br />
+ <span>Second Span</span>
+ <hr />
+ <div>
+ <!--&lt; and &gt; render the Less Than and Greater Than symbols, respectively, since they are protected characters by default the same way paranthesees are in
+ Windows Explorer, as it avoids potential discrepancies between simple file names and actual code.-->
+ This is how you write a &lt;div&gt;
+ </div>
+ </div>
+ 
+ <br />
+ 
+ <a name="Terminology" title="Technical Terms">
+	<h2>Terminology</h2>
+ </a>
+ <!--Definition Lists-->
+ <dl>
+ <!--Definition Term-->
+ <dt>HTML</dt>
+ <!--Definition Definition-->
+ <dd>HyperText Markup Language is what's used to author web pages</dd>
+ <dt>HTTP</dt>
+ <dd>HyperText Transfer Protocol is what's used to request and send documents between computers</dd>
+ </dl>
+ 
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ 
+ </body>
 </html>
